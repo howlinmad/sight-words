@@ -1,0 +1,67 @@
+body {
+    background-color: orange;
+}
+main {
+    width: 900px;
+    margin: 6% 25%;
+}
+.card{
+    background-color: blue;
+    width: 900px;
+    height: 500px;
+    text-align: center;
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+    
+}
+.animated-container {
+    display: inline-block; 
+    margin: 0;
+    padding: 0; 
+    /*900px * (number of words + 1) */
+    /* (53 + 1) * 900 = 48600 */
+    width: 48600px;
+    height: 500px;
+    
+}
+.word{
+    color: White;
+    font-size: 5em;
+    text-align: center;
+    padding-top: 0.4%;
+    float: left;    
+    width: 900px; 
+    height: 500px;
+}
+header{
+    margin-left: 25%; 
+    color: blue;
+    padding-top: 3%;
+}
+.left-arrow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 2%;
+}
+.right-arrow{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 500px;
+    width: 2%;
+}
+.left{
+    height: 75px;    
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+.right{
+    height: 75px;    
+    position: absolute;
+    top: 40%;
+    right: 0;
+}
