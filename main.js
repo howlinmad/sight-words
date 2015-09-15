@@ -10,33 +10,34 @@ var wList= $('div.animated-container')
                 .text(words[i])
                 .appendTo(wList);
 });
-    $(".left").click(function() {
-        
-        console.log(currentSlide);
-        if(currentSlide === 53) {
+    $(".left").click(function() {                
+        if(++currentSlide > 54) {
             currentSlide = 1;
             $(".animated-container").css({'margin-left': '0px'});
             $(".animated-container").animate({'margin-left': '-=900'});
-            currentSlide++;
+            
         }
         else {
             $(".animated-container").animate({'margin-left': '-=900'});
-            currentSlide++;
+            
         }
+        console.log(currentSlide);
         });
     $(".right").click(function() {        
-        console.log(currentSlide);
-        if(currentSlide === 1) {
+        
+        if(--currentSlide < 1) {
             currentSlide = 54;
             $(".animated-container").css({'margin-left': '-48600px'});
             $('.animated-container').animate({'margin-left': '+=900'}, function() {
-            currentSlide--;
+            
             });
         } else {
             $('.animated-container').animate({'margin-left': '+=900'}, function() {
-            currentSlide--;
+            
                 
         });
+            
         }       
+        console.log(currentSlide);
     });
 });
