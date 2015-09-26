@@ -10,7 +10,7 @@ var wList= $('div.animated-container')
                 .text(words[i])
                 .appendTo(wList);
 });
-    $(".left").click(function() {                
+    $(".right").click(function() {                
         if(++currentSlide > 54) {
             currentSlide = 1;
             $(".animated-container").css({'margin-left': '0px'});
@@ -23,7 +23,7 @@ var wList= $('div.animated-container')
         }
         console.log(currentSlide);
         });
-    $(".right").click(function() {        
+    $(".left").click(function() {        
         
         if(--currentSlide < 1) {
             currentSlide = 54;
